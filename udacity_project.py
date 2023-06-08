@@ -16,8 +16,10 @@ def game_intro(): #introduction to the game
     points = 0
     print('Welcome to the Treasure Game')
     time.sleep(1)
-    print('You are searching for the hidden treasure and you winded up here. You have a gun without bullets.') 
-    time.sleep(2)
+    print('You are searching for the hidden treasure and you winded up here.')
+    time.sleep(1)
+    print('You have a gun without bullets.') 
+    time.sleep(1)
     print('On your left there the treasure cave.')
     time.sleep(1)
     print('But you need to kill the ghost to get the treasure.')
