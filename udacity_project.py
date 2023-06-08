@@ -1,4 +1,3 @@
-# Run the game by entering python3 adventure_game.py in the terminal
 import time
 import random
 # This game is about a person who is trying to find the hidden treasure.
@@ -53,7 +52,6 @@ def cave(points): #cave function used to describe what happens in the cave
                 print('You lost all your trials. You are dead.')
                 play_again()
             print('You have', 2-cave_trials,  'trials left')
-            # cave_trials += 1
             print('Enter "a" or "b"')
             cave_decision = input()
                 
@@ -81,7 +79,6 @@ def river(points): #river function used to describe what happens at the river
                     print('You lost all your trials. You are dead.')
                     play_again()
                 print('You have', 2-river_trials,  'trials left')
-                # river_trials += 1
                 print('Enter "a" or "b"')
                 river_decision = input()
     elif points == 1:
@@ -110,7 +107,6 @@ def checkpoint(points): #checkpoint function used to describe what happens at th
                 print('You lost all your trials. You are dead.')
                 play_again()
             print('You have', 2-trials,  'trials left')
-            # trials += 1
             print('Enter "a" or "b"')
             cave_or_river = input()
 
@@ -133,7 +129,6 @@ def ghosts(points): #ghosts function used to describe what happens when you enco
                         print('You lost all your trials. You are dead.')
                         play_again()
                     print('You have', 2-bullet_trials,  'trials left')
-                    # bullet_trials += 1
                     print('Please enter the letter "G"')
                     bullet = input()
         elif ghost_name == 'disco': 
@@ -149,7 +144,6 @@ def ghosts(points): #ghosts function used to describe what happens when you enco
                         print('You lost all your trials. You are dead.')
                         play_again()
                     print('You have', 2-bullet_trials,  'trials left')
-                    # bullet_trials += 1
                     print('Please enter the letter "S"')
                     bullet = input()
         elif ghost_name == 'caesar': 
@@ -165,7 +159,6 @@ def ghosts(points): #ghosts function used to describe what happens when you enco
                         print('You lost all your trials. You are dead.')
                         play_again()
                     print('You have', 2-bullet_trials,  'trials left')
-                    # bullet_trials += 1
                     print('Please enter the letter "P"')
                     bullet = input()
     elif points == 0:
@@ -190,7 +183,6 @@ def play_again(): #play again function used to ask the user if they want to play
                 print('You lost all your trials. Good Bye! :D')
                 exit()
             print('You have ', 2-trials,  ' trials left')
-            # trials += 1
             print('Enter "Y" or "N"')
             answer = input()
             if answer == 'Y':
