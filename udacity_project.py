@@ -193,6 +193,11 @@ def play_again(): #play again function used to ask the user if they want to play
             # trials += 1
             print('Enter "Y" or "N"')
             answer = input()
+            if answer == 'Y':
+                game_intro()
+            elif answer == 'N':
+                print('Thank you for playing. Hope you enjoyed it')
+                exit()
         
 
 
